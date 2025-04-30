@@ -189,3 +189,6 @@ gfx/trade/game_boy.2bpp: tools/gfx += --remove-duplicates
 
 %.pic: %.2bpp
 	tools/pkmncompress $< $@
+
+play:
+	~/Softwares/mGBA-0.10.4-appimage-x64.appimage pokered.gbc & 

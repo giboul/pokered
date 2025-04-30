@@ -192,6 +192,47 @@ OaksLabPlayerForcedToWalkBackScript:
 	ret
 
 OaksLabChoseStarterScript:
+	; All badges available
+	ld hl, wObtainedBadges
+	set BIT_BOULDERBADGE, [hl]
+	ld hl, wBeatGymFlags
+	set BIT_BOULDERBADGE, [hl]
+
+	ld hl, wObtainedBadges
+	set BIT_CASCADEBADGE, [hl]
+	ld hl, wBeatGymFlags
+	set BIT_CASCADEBADGE, [hl]
+
+	ld hl, wObtainedBadges
+	set BIT_THUNDERBADGE, [hl]
+	ld hl, wBeatGymFlags
+	set BIT_THUNDERBADGE, [hl]
+
+	ld hl, wObtainedBadges
+	set BIT_RAINBOWBADGE, [hl]
+	ld hl, wBeatGymFlags
+	set BIT_RAINBOWBADGE, [hl]
+
+	ld hl, wObtainedBadges
+	set BIT_SOULBADGE, [hl]
+	ld hl, wBeatGymFlags
+	set BIT_SOULBADGE, [hl]
+
+	ld hl, wObtainedBadges
+	set BIT_MARSHBADGE, [hl]
+	ld hl, wBeatGymFlags
+	set BIT_MARSHBADGE, [hl]
+
+	ld hl, wObtainedBadges
+	set BIT_VOLCANOBADGE, [hl]
+	ld hl, wBeatGymFlags
+	set BIT_VOLCANOBADGE, [hl]
+
+	ld hl, wObtainedBadges
+	set BIT_EARTHBADGE, [hl]
+	ld hl, wBeatGymFlags
+	set BIT_EARTHBADGE, [hl]
+
 	ld a, [wPlayerStarter]
 	cp STARTER1
 	jr z, .Charmander
@@ -924,6 +965,7 @@ OaksLabMonChoiceMenu:
 	call PrintText
 	xor a ; PLAYER_PARTY_DATA
 	ld [wMonDataLocation], a
+	; ld a, 99 ; 5
 	ld a, 5
 	ld [wCurEnemyLevel], a
 	ld a, [wCurPartySpecies]

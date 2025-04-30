@@ -1,7 +1,7 @@
 TrainerNames::
 	list_start
 	li "YOUNGSTER"
-	li "BUG CATCHER"
+	li "AXEL"
 	li "LASS"
 	li "SAILOR"
 	li "JR.TRAINER♂"

@@ -7,20 +7,20 @@ _ViridianForestYoungster1Text::
 	done
 
 _ViridianForestYoungster2BattleText::
-	text "Hey! You have"
-	line "#MON! Come on!"
-	cont "Let's battle'em!"
+	text "Hey Alix!"
+	line "It's me, Axel!"
+	cont "We have to battle!"
 	done
 
 _ViridianForestYoungster2EndBattleText::
 	text "No!"
-	line "CATERPIE can't"
-	cont "cut it!"
+	line "I lost! But"
+	cont "she's 30 already!"
 	prompt
 
 _ViridianForestYoungster2AfterBattleText::
-	text "Ssh! You'll scare"
-	line "the bugs away!"
+	text "Happy birthday!"
+	line "-The best brother"
 	done
 
 _ViridianForestYoungster3BattleText::
